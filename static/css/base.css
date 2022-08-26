@@ -5,6 +5,18 @@ body {
 }
 header {
     background-color: #C55300;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-left, .nav-right, .blog-post {
+    background-color: #FFF;
+}
+.btn {
+    background-color: green;
+    color: white;
+}
+.btn-warning {
+    background-color: red;
 }
 #content {
     background-color: #A62349;

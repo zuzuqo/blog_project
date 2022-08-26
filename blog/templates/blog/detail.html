@@ -13,5 +13,9 @@
     <p class="blog-post-info">
         {{ object.author }} | {{ object.time_created }}
     </p>
+    {% if request.user == object.author %}
+    <a class="btn" href="{% url 'blog_post_edit' post.pk %}">Edit Post</a>
+    <a class='btn btn-warning' href="{% url 'delete_blog_post' post.pk %}">Delete</a>
+    {% endif %}
 </div>
 {% endblock %}
