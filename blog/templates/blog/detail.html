@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="blog-post">
+    <h2 class="blog-post-title">
+        {{ object.title }}
+    </h2>
+    <p class="blog-post-body">
+        {{ object.body }}
+    </p>
+    <p class="blog-post-time">
+        {{ object.time_created }}
+    </p>
+</div>
+{% endblock %}
