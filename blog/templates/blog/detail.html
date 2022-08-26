@@ -9,8 +9,9 @@
     <p class="blog-post-body">
         {{ object.body }}
     </p>
-    <p class="blog-post-time">
-        {{ object.time_created }}
+
+    <p class="blog-post-info">
+        {{ object.author }} | {{ object.time_created }}
     </p>
 </div>
 {% endblock %}
